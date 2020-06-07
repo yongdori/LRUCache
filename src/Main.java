@@ -115,7 +115,12 @@ public class Main{
         //splitArray_LargestSum.test();
         //maxSweetness.test();
         //Logger.test();
-        lineOveralap.test();
+        //lineOveralap.test();
+        //decompressRLElist.test();
+        //subtractProductSum.test();
+        //removeOuterParentheses.test();
+        //MovingAverage.test();
+        removeDuplicates.test();
 
     }
 
