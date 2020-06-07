@@ -2,24 +2,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class DFS_CriticalConnection {
-
-
         static List<List<Integer>> graph = new ArrayList<List<Integer>>();
-
         public static void insertGraph(Integer n1, Integer n2){
             if (n1 != n2) {
                 graph.get(n1).add(n2);
                 graph.get(n2).add(n1);
             }
         }
-
         public static List<List<Integer>> criticalConnections(int n, List<List<Integer>> connections) {
-
             //init graph
             for (int i = 0; i < n; i++) {
                 graph.add(new ArrayList<>());
             }
-
             //buiding graph
             for (int i = 0; i < connections.size(); i++ ){
                 List<Integer>cur = connections.get(i);
@@ -27,11 +21,8 @@ public class DFS_CriticalConnection {
                     insertGraph(cur.get(0), cur.get(1));
                 }
             }
-
             List<List<Integer>> result =  new ArrayList<List<Integer>>();
-
             int [] degree = new int[n];
-
             for(int i = 0 ; i < n; i++){
                 degree[i] = -1;
             }
