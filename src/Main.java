@@ -120,7 +120,11 @@ public class Main{
         //subtractProductSum.test();
         //removeOuterParentheses.test();
         //MovingAverage.test();
-        removeDuplicates.test();
+        //removeDuplicates.test();
+        //invertTree2.test();
+        //reverseString.test();
+        //maxDepth.test();
+        nextGreaterElement.test();
 
     }
 
